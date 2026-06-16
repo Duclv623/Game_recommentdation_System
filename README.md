@@ -21,7 +21,7 @@ Hệ thống gợi ý game Steam thông minh sử dụng **Hybrid Recommendation
 
 ### Yêu cầu
 - Python 3.8+
-- pip
+- pip install
 
 ### Các bước cài đặt
 
