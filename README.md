@@ -1,23 +1,23 @@
-# 🎮 Steam Game Recommendation System
+#  Steam Game Recommendation System
 
 Hệ thống gợi ý game Steam thông minh sử dụng **Hybrid Recommendation** (Collaborative Filtering + Content-Based + Hours-Based + Sentiment Analysis).
 
-## ✨ Tính năng
+##  Tính năng
 
-- 🔍 **Tìm kiếm game** với gợi ý tự động
-- 💡 **Gợi ý game tương tự** dựa trên AI
-- 🎯 **Lọc theo thể loại** và giá
-- ⭐ **Top game nổi bật** theo đánh giá
-- 🆕 **Game mới phát hành** 
-- 👍 **Game được đánh giá cao**
-- 🎬 **Video trailer** và mô tả chi tiết
-- 🌐 **Dịch tự động** sang tiếng Việt
+-  **Tìm kiếm game** với gợi ý tự động
+-  **Gợi ý game tương tự** dựa trên AI
+-  **Lọc theo thể loại** và giá
+-  **Top game nổi bật** theo đánh giá
+-  **Game mới phát hành** 
+-  **Game được đánh giá cao**
+-  **Video trailer** và mô tả chi tiết
+-  **Dịch tự động** sang tiếng Việt
 
-## 🚀 Demo trực tuyến
+##  Demo trực tuyến
 
-👉 **(https://gamerecommentdationsystem-zuqsj8qznazzzdhcyetbwp.streamlit.app/#gioi-thieu)](#)** _(Cập nhật link sau khi deploy)_
 
-## 📦 Cài đặt Local
+
+##  Cài đặt Local
 
 ### Yêu cầu
 - Python 3.8+
@@ -48,7 +48,7 @@ streamlit run app.py
 
 Ứng dụng sẽ mở tại: `http://localhost:8501`
 
-## 🏗️ Cấu trúc project
+##  Cấu trúc project
 
 ```
 END/
@@ -63,7 +63,7 @@ END/
 └── data/                          # Dataset (không cần cho deploy)
 ```
 
-## 🧠 Phương pháp Hybrid Recommendation
+##  Phương pháp Hybrid Recommendation
 
 Model kết hợp 4 yếu tố:
 
@@ -77,7 +77,7 @@ Model kết hợp 4 yếu tố:
 Hybrid_Score = 0.6×Collab + 0.25×Hours + 0.1×Content + 0.05×Sentiment
 ```
 
-## 🎓 Training Model
+##  Training Model
 
 Để train lại model từ đầu:
 
@@ -92,7 +92,7 @@ python train_model_precompute.py --data_dir data --output_dir models
 - `steam_requirements_data.csv` - Cấu hình yêu cầu
 - `steam_media_data.csv` - Video/ảnh
 
-## 📊 Đánh giá Model
+##  Đánh giá Model
 
 ```bash
 python evaluate_final.py
@@ -105,7 +105,7 @@ python evaluate_final.py
 - Coverage
 - Diversity
 
-## 🌐 Deploy lên Cloud
+##  Deploy lên Cloud
 
 ### Streamlit Cloud (Khuyên dùng)
 
@@ -146,7 +146,7 @@ git commit -m "Deploy app"
 git push
 ```
 
-## 🔧 Troubleshooting
+##  Troubleshooting
 
 ### Lỗi: "File too large for GitHub"
 - File > 100MB không thể push lên GitHub
@@ -161,7 +161,7 @@ pip install -r requirements.txt --upgrade
 - Do load model lần đầu (~15MB)
 - Sử dụng `@st.cache_resource` để cache
 
-## 📈 Cải tiến tương lai
+##  Cải tiến tương lai
 
 - [ ] User authentication & personalized history
 - [ ] Advanced embeddings (Sentence-BERT)
@@ -169,17 +169,4 @@ pip install -r requirements.txt --upgrade
 - [ ] A/B testing framework
 - [ ] Mobile responsive UI
 
-## 👨‍💻 Tác giả
-
-**[Tên của bạn]**
-- GitHub: [@your-github]
-- Email: your-email@example.com
-
-## 📄 License
-
-MIT License - Tự do sử dụng cho mục đích học tập và nghiên cứu.
-
----
-
-⭐ **Nếu thấy project hữu ích, hãy cho 1 star nhé!** ⭐
 
